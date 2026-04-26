@@ -1,59 +1,198 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Smart Energy Management</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
+<!-- ── Navbar ── -->
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
     <div class="container">
-        <a class="navbar-brand" href="index.html">EnergySMART</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <a class="navbar-brand" href="index.html">Energy<span>SMART</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="domain.html">Domain</a></li>
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item"><a class="nav-link active" href="index.html"><i class="bi bi-house-fill me-1"></i>Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="domain.html"><i class="bi bi-cpu me-1"></i>Domain</a></li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="milestoneDrop" data-bs-toggle="dropdown">Milestones</a>
+                    <a class="nav-link dropdown-toggle" href="#" id="milestoneDrop" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-flag me-1"></i>Milestones</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="milestones.html#proposal">Project Proposal</a></li>
-                        <li><a class="dropdown-item" href="milestones.html#pp1">Progress Presentation 1</a></li>
-                        <li><a class="dropdown-item" href="milestones.html#pp2">Progress Presentation 2</a></li>
-                        <li><a class="dropdown-item" href="milestones.html#final">Final Assessment</a></li>
+                        <li><a class="dropdown-item" href="milestones.html#proposal"><i class="bi bi-file-text me-2"></i>Project Proposal</a></li>
+                        <li><a class="dropdown-item" href="milestones.html#pp1"><i class="bi bi-easel me-2"></i>Progress Presentation 1</a></li>
+                        <li><a class="dropdown-item" href="milestones.html#pp2"><i class="bi bi-easel2 me-2"></i>Progress Presentation 2</a></li>
+                        <li><a class="dropdown-item" href="milestones.html#final"><i class="bi bi-trophy me-2"></i>Final Assessment</a></li>
                     </ul>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="documents.html">Documents</a></li>
-                <li class="nav-item"><a class="nav-link" href="slides.html">Slides</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact us</a></li>
+                <li class="nav-item"><a class="nav-link" href="documents.html"><i class="bi bi-folder2-open me-1"></i>Documents</a></li>
+                <li class="nav-item"><a class="nav-link" href="slides.html"><i class="bi bi-easel3 me-1"></i>Slides</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html"><i class="bi bi-people me-1"></i>About us</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html"><i class="bi bi-envelope me-1"></i>Contact us</a></li>
             </ul>
         </div>
     </div>
 </nav>
 
+<!-- ── Hero ── -->
 <header class="hero-section">
-    <div class="container">
-        <h1 class="display-4">Smart Energy Management System</h1>
-        <p class="lead">Leveraging IoT and Data Analytics for a Sustainable Future</p>
+    <div class="container position-relative">
+        <div class="hero-badge">
+            <i class="bi bi-lightning-charge-fill"></i> SLIIT Research Project &nbsp;|&nbsp; 2025 – 2026
+        </div>
+        <h1>Smart <span>Energy Management</span> System</h1>
+        <p class="lead">Leveraging IoT Sensor Fusion, AI-Driven Recommendations, and a Flutter Mobile App to eliminate energy waste in real time.</p>
+        <div class="hero-cta">
+            <a href="domain.html" class="btn-main"><i class="bi bi-cpu me-2"></i>Explore Research</a>
+            <a href="about.html" class="btn-ghost"><i class="bi bi-people me-2"></i>Meet the Team</a>
+        </div>
     </div>
 </header>
 
+<!-- ── Stats ── -->
+<div class="stats-section">
+    <div class="container">
+        <div class="stats-wrapper">
+            <div class="row g-0 justify-content-center">
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <span class="stat-value">4</span>
+                        <div class="stat-label"><i class="bi bi-people-fill me-1 text-accent"></i>Team Members</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <span class="stat-value">2</span>
+                        <div class="stat-label"><i class="bi bi-cpu-fill me-1 text-accent"></i>IoT Devices</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <span class="stat-value">Real</span>
+                        <div class="stat-label"><i class="bi bi-activity me-1 text-accent"></i>-Time Monitoring</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <span class="stat-value">AI</span>
+                        <div class="stat-label"><i class="bi bi-robot me-1 text-accent"></i>-Automated controll</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ── Abstract ── -->
 <main class="container my-5">
-    <h2 class="section-title">Abstract</h2>
-    <p class="text-justify">
-        In modern organizations, significant energy is wasted when electrical appliances are left running in unoccupied spaces. 
-        Our research presents an integrated <strong>Smart Energy Management System</strong> that monitors device-level consumption 
-        using <strong>IoT sensors (ACS712, PIR, RCWL)</strong> and provides AI-driven optimization strategies. 
-        The system enables real-time monitoring and automated recommendations to reduce operational costs and carbon footprints.
-    </p>
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <h2 class="section-title">Abstract</h2>
+            <div class="card p-4 p-md-5">
+                <p class="fs-5 lh-lg" style="color: var(--text);">
+                    In modern organizations, significant energy is wasted when electrical appliances are left running in
+                    <strong>unoccupied spaces</strong>. Our research presents an integrated
+                    <strong style="color: var(--accent-dark);">Smart Energy Management System</strong> that monitors
+                    device-level consumption using <strong>IoT sensors (ACS712, PIR, RCWL)</strong> and provides
+                    AI-driven optimization strategies.
+                </p>
+                <p style="color: var(--text-muted);">
+                    The system pairs a <strong>Python REST API</strong> backend and <strong>MongoDB</strong> database
+                    with a cross-platform <strong>Flutter mobile application</strong>, enabling facility managers to
+                    monitor energy consumption, receive occupancy-based alerts, and reduce operational costs and
+                    carbon footprints — all from their smartphone.
+                </p>
+                <div class="d-flex flex-wrap gap-2 mt-3">
+                    <span class="tech-badge"><i class="bi bi-lightning-charge me-1"></i>ACS712 Sensor</span>
+                    <span class="tech-badge"><i class="bi bi-eye me-1"></i>PIR + RCWL</span>
+                    <span class="tech-badge"><i class="bi bi-filetype-py me-1"></i>Python API</span>
+                    <span class="tech-badge"><i class="bi bi-phone me-1"></i>Flutter</span>
+                    <span class="tech-badge"><i class="bi bi-leaf me-1"></i>MongoDB</span>
+                    <span class="tech-badge"><i class="bi bi-robot me-1"></i>AI Alerts</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ── Feature Highlights ── -->
+    <h2 class="section-title mt-5 pt-3">System Highlights</h2>
+    <div class="row g-4">
+        <div class="col-sm-6 col-lg-3">
+            <div class="feature-card">
+                <div class="feature-icon"><i class="bi bi-lightning-charge-fill"></i></div>
+                <h5>IoT Energy Monitoring</h5>
+                <p>ACS712 current sensors measure per-appliance power consumption in real time via ESP8266 Wi-Fi microcontrollers.</p>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="feature-card">
+                <div class="feature-icon"><i class="bi bi-person-bounding-box"></i></div>
+                <h5>Occupancy Detection</h5>
+                <p>Dual PIR + RCWL microwave radar fusion on ESP32 delivers high-accuracy, lighting-independent presence sensing.</p>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="feature-card">
+                <div class="feature-icon"><i class="bi bi-phone-fill"></i></div>
+                <h5>Flutter Mobile App</h5>
+                <p>A cross-platform Android &amp; iOS app for real-time energy dashboards, occupancy alerts, and device control.</p>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="feature-card">
+                <div class="feature-icon"><i class="bi bi-robot"></i></div>
+                <h5>AI Recommendations</h5>
+                <p>Intelligent engine detects wasteful scenarios — room vacant, appliance on — and auto-triggers corrective actions.</p>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="feature-card">
+                <div class="feature-icon"><i class="bi bi-filetype-py"></i></div>
+                <h5>Python REST API</h5>
+                <p>Scalable backend processes sensor payloads, validates data, and serves the Flutter app and web dashboard.</p>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="feature-card">
+                <div class="feature-icon"><i class="bi bi-leaf-fill"></i></div>
+                <h5>MongoDB Database</h5>
+                <p>Flexible NoSQL document store handles time-series IoT data with fast queries for historical energy analytics.</p>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="feature-card">
+                <div class="feature-icon"><i class="bi bi-bar-chart-line-fill"></i></div>
+                <h5>Analytics Dashboard</h5>
+                <p>Web-based visualizations of per-device consumption trends, occupancy patterns, and estimated cost savings.</p>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="feature-card">
+                <div class="feature-icon"><i class="bi bi-shield-check-fill"></i></div>
+                <h5>Sustainable Impact</h5>
+                <p>Proven reduction in unnecessary energy waste, contributing to lower carbon footprints and green operations.</p>
+            </div>
+        </div>
+    </div>
 </main>
 
-<footer><p>&copy; 2026 Smart Energy Project Team - SLIIT</p></footer>
+<!-- ── Footer ── -->
+<footer>
+    <div class="container">
+        <div class="footer-brand">EnergySMART</div>
+        <p>&copy; 2026 Smart Energy Project Team &mdash; SLIIT &nbsp;|&nbsp; Faculty of Computing</p>
+        <div class="mt-3 d-flex justify-content-center gap-3">
+            <a href="about.html"><i class="bi bi-people me-1"></i>Team</a>
+            <a href="domain.html"><i class="bi bi-cpu me-1"></i>Research</a>
+            <a href="contact.html"><i class="bi bi-envelope me-1"></i>Contact</a>
+        </div>
+    </div>
+</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
