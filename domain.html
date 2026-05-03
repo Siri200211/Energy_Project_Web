@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,50 +15,78 @@
             padding: 70px 0 50px;
             text-align: center;
         }
-        .domain-hero h1 { font-size: 2.4rem; font-weight: 700; }
-        .domain-hero p  { font-size: 1.1rem; opacity: 0.85; max-width: 700px; margin: 0 auto; }
+
+        .domain-hero h1 {
+            font-size: 2.4rem;
+            font-weight: 700;
+        }
+
+        .domain-hero p {
+            font-size: 1.1rem;
+            opacity: 0.85;
+            max-width: 700px;
+            margin: 0 auto;
+        }
 
         .section-card {
             border: none;
             border-radius: 12px;
-            box-shadow: 0 4px 18px rgba(0,0,0,0.07);
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
             transition: transform .2s;
         }
-        .section-card:hover { transform: translateY(-4px); }
+
+        .section-card:hover {
+            transform: translateY(-4px);
+        }
 
         .icon-circle {
-            width: 56px; height: 56px;
+            width: 56px;
+            height: 56px;
             border-radius: 50%;
-            display: flex; align-items: center; justify-content: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             font-size: 1.5rem;
         }
+
         .highlight-box {
             border-left: 5px solid #27ae60;
             background: #f0fff4;
             border-radius: 0 10px 10px 0;
             padding: 20px 25px;
         }
+
         .problem-box {
             border-left: 5px solid #e74c3c;
             background: #fff5f5;
             border-radius: 0 10px 10px 0;
             padding: 20px 25px;
         }
+
         .objective-item {
-            display: flex; align-items: flex-start; gap: 14px;
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
             background: #fff;
             border-radius: 10px;
             padding: 16px 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
             margin-bottom: 14px;
         }
+
         .objective-num {
-            min-width: 36px; height: 36px;
-            background: #27ae60; color: white;
+            min-width: 36px;
+            height: 36px;
+            background: #27ae60;
+            color: white;
             border-radius: 50%;
-            display: flex; align-items: center; justify-content: center;
-            font-weight: 700; font-size: .9rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: .9rem;
         }
+
         .tech-badge {
             display: inline-block;
             background: #2c3e50;
@@ -67,274 +96,349 @@
             font-size: .85rem;
             margin: 4px;
         }
+
         .method-card {
             border-radius: 12px;
             border: 1px solid #dee2e6;
             padding: 24px;
             height: 100%;
         }
-        .method-card h5 { color: #27ae60; font-weight: 700; }
-        .section-anchor { scroll-margin-top: 80px; }
+
+        .method-card h5 {
+            color: #27ae60;
+            font-weight: 700;
+        }
+
+        .section-anchor {
+            scroll-margin-top: 80px;
+        }
     </style>
 </head>
+
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">Energy<span>SMART</span></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto align-items-lg-center">
-                <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-fill me-1"></i>Home</a></li>
-                <li class="nav-item"><a class="nav-link active" href="domain.html"><i class="bi bi-cpu me-1"></i>Domain</a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="milestoneDrop" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-flag me-1"></i>Milestones</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="milestones.html#proposal"><i class="bi bi-file-text me-2"></i>Project Proposal</a></li>
-                        <li><a class="dropdown-item" href="milestones.html#pp1"><i class="bi bi-easel me-2"></i>Progress Presentation 1</a></li>
-                        <li><a class="dropdown-item" href="milestones.html#pp2"><i class="bi bi-easel2 me-2"></i>Progress Presentation 2</a></li>
-                        <li><a class="dropdown-item" href="milestones.html#final"><i class="bi bi-trophy me-2"></i>Final Assessment</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="documents.html"><i class="bi bi-folder2-open me-1"></i>Documents</a></li>
-                <li class="nav-item"><a class="nav-link" href="slides.html"><i class="bi bi-easel3 me-1"></i>Slides</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html"><i class="bi bi-people me-1"></i>About us</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html"><i class="bi bi-envelope me-1"></i>Contact us</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<!-- Page Hero -->
-<div class="domain-hero">
-    <div class="container">
-        <h1><i class="bi bi-cpu me-2"></i>Research Domain</h1>
-        <p class="mt-3">Exploring IoT-based Smart Energy Management through sensor fusion, real-time data pipelines, and AI-driven recommendations.</p>
-        <div class="mt-4 d-flex justify-content-center flex-wrap gap-2">
-            <span class="tech-badge"><i class="bi bi-lightning-charge-fill me-1"></i>Energy IoT</span>
-            <span class="tech-badge"><i class="bi bi-person-bounding-box me-1"></i>Occupancy Sensing</span>
-            <span class="tech-badge"><i class="bi bi-robot me-1"></i>AI Optimization</span>
-            <span class="tech-badge"><i class="bi bi-cloud-arrow-up me-1"></i>Real-Time Data</span>
-            <span class="tech-badge"><i class="bi bi-phone me-1"></i>Flutter Mobile</span>
-            <span class="tech-badge"><i class="bi bi-database-fill me-1"></i>MongoDB</span>
-        </div>
-    </div>
-</div>
-
-<main class="container my-5">
-
-    <!-- Quick Nav Pills -->
-    <div class="d-flex flex-wrap gap-2 mb-5 justify-content-center">
-        <a href="#literature"   class="btn btn-outline-secondary btn-sm"><i class="bi bi-book me-1"></i>Literature Survey</a>
-        <a href="#gap"          class="btn btn-outline-secondary btn-sm"><i class="bi bi-search me-1"></i>Research Gap</a>
-        <a href="#problem"      class="btn btn-outline-secondary btn-sm"><i class="bi bi-exclamation-circle me-1"></i>Research Problem</a>
-        <a href="#objectives"   class="btn btn-outline-secondary btn-sm"><i class="bi bi-bullseye me-1"></i>Objectives</a>
-        <a href="#methodology"  class="btn btn-outline-secondary btn-sm"><i class="bi bi-gear me-1"></i>Methodology</a>
-        <a href="#technologies" class="btn btn-outline-secondary btn-sm"><i class="bi bi-stack me-1"></i>Technologies</a>
-    </div>
-
-    <!-- Literature Survey -->
-    <section id="literature" class="section-anchor mb-5">
-        <div class="card section-card p-4">
-            <div class="d-flex align-items-center gap-3 mb-3">
-                <div class="icon-circle bg-success text-white"><i class="bi bi-book-half"></i></div>
-                <h2 class="section-title mb-0">Literature Survey</h2>
-            </div>
-            <p>Current research highlights a growing need for effective energy handling in both residential and industrial sectors. Existing studies <em>(Khan et al., 2018)</em> focus predominantly on smart meters but often lack <strong>device-level granularity</strong> — they measure a building's total consumption but cannot pinpoint which specific appliance is wasting energy.</p>
-            <p>Recent advancements in low-cost IoT microcontrollers such as the <strong>ESP32</strong> and <strong>ESP8266</strong> have opened doors for real-time edge computing, enabling localized signal processing and calibration directly on the hardware <em>(Garcés, 2025)</em>. Parallel research in occupancy detection has demonstrated that combining <strong>Passive Infrared (PIR)</strong> sensors with <strong>RCWL microwave radar</strong> significantly reduces false-negative readings compared to either sensor used in isolation.</p>
-            <p>Despite this progress, a fully integrated pipeline — from occupancy detection through to appliance-level energy actioning — remains largely absent from commercially available or research-grade systems.</p>
-        </div>
-    </section>
-
-    <!-- Research Gap -->
-    <section id="gap" class="section-anchor mb-5">
-        <div class="card section-card p-4">
-            <div class="d-flex align-items-center gap-3 mb-3">
-                <div class="icon-circle bg-info text-white"><i class="bi bi-search"></i></div>
-                <h2 class="section-title mb-0">Research Gap</h2>
-            </div>
-            <div class="highlight-box">
-                <p class="mb-2"><strong>Core Gap Identified:</strong></p>
-                <p class="mb-0">Most existing systems provide aggregated building-level energy data but fail to identify <em>which specific appliance</em> is consuming energy in an <em>unoccupied room</em>. There is a clear absence of a system that tightly integrates:</p>
-                <ul class="mt-2 mb-0">
-                    <li><strong>Real-time occupancy detection</strong> (multi-sensor fusion)</li>
-                    <li><strong>Device-level current monitoring</strong> (per-appliance metering)</li>
-                    <li><strong>Automated, AI-driven corrective actions</strong> (not just dashboards)</li>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Volt<span>Guard</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i
+                                class="bi bi-house-fill me-1"></i>Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="domain.html"><i
+                                class="bi bi-cpu me-1"></i>Domain</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="milestoneDrop" data-bs-toggle="dropdown"
+                            aria-expanded="false"><i class="bi bi-flag me-1"></i>Milestones</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="milestones.html#proposal"><i
+                                        class="bi bi-file-text me-2"></i>Project Proposal</a></li>
+                            <li><a class="dropdown-item" href="milestones.html#pp1"><i
+                                        class="bi bi-easel me-2"></i>Progress Presentation 1</a></li>
+                            <li><a class="dropdown-item" href="milestones.html#pp2"><i
+                                        class="bi bi-easel2 me-2"></i>Progress Presentation 2</a></li>
+                            <li><a class="dropdown-item" href="milestones.html#final"><i
+                                        class="bi bi-trophy me-2"></i>Final Assessment</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="documents.html"><i
+                                class="bi bi-folder2-open me-1"></i>Documents</a></li>
+                    <li class="nav-item"><a class="nav-link" href="slides.html"><i
+                                class="bi bi-easel3 me-1"></i>Slides</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html"><i class="bi bi-people me-1"></i>About
+                            us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html"><i
+                                class="bi bi-envelope me-1"></i>Contact us</a></li>
                 </ul>
             </div>
         </div>
-    </section>
+    </nav>
 
-    <!-- Research Problem -->
-    <section id="problem" class="section-anchor mb-5">
-        <div class="card section-card p-4">
-            <div class="d-flex align-items-center gap-3 mb-3">
-                <div class="icon-circle bg-danger text-white"><i class="bi bi-exclamation-circle"></i></div>
-                <h2 class="section-title mb-0">Research Problem</h2>
+    <!-- Page Hero -->
+    <div class="domain-hero">
+        <div class="container">
+            <h1><i class="bi bi-cpu me-2"></i>Research Domain</h1>
+            <p class="mt-3">Exploring IoT-based Smart Energy Management through sensor fusion, real-time data pipelines,
+                and AI-driven recommendations.</p>
+            <div class="mt-4 d-flex justify-content-center flex-wrap gap-2">
+                <span class="tech-badge"><i class="bi bi-lightning-charge-fill me-1"></i>Energy IoT</span>
+                <span class="tech-badge"><i class="bi bi-person-bounding-box me-1"></i>Occupancy Sensing</span>
+                <span class="tech-badge"><i class="bi bi-robot me-1"></i>AI Optimization</span>
+                <span class="tech-badge"><i class="bi bi-cloud-arrow-up me-1"></i>Real-Time Data</span>
+                <span class="tech-badge"><i class="bi bi-phone me-1"></i>Flutter Mobile</span>
+                <span class="tech-badge"><i class="bi bi-database-fill me-1"></i>MongoDB</span>
             </div>
-            <div class="problem-box">
-                <p class="fs-5 fw-semibold text-danger mb-2">"How can IoT sensor fusion be used to automatically detect energy waste at the appliance level in unoccupied spaces and provide real-time corrective recommendations?"</p>
-                <p class="mb-0 text-muted">Organizations lack a unified system that simultaneously monitors device-level energy consumption and detects room occupancy. Manual intervention is required to turn off appliances in vacant spaces, resulting in unnecessary energy waste, increased operational costs, and an enlarged carbon footprint.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Research Objectives -->
-    <section id="objectives" class="section-anchor mb-5">
-        <div class="card section-card p-4">
-            <div class="d-flex align-items-center gap-3 mb-3">
-                <div class="icon-circle bg-warning text-dark"><i class="bi bi-bullseye"></i></div>
-                <h2 class="section-title mb-0">Research Objectives</h2>
-            </div>
-            <div class="objective-item">
-                <div class="objective-num">1</div>
-                <div><strong>Device-Level Monitoring</strong><br><span class="text-muted">Design and implement an energy monitoring module using the ACS712 current sensor interfaced with ESP8266 for wireless transmission via REST API.</span></div>
-            </div>
-            <div class="objective-item">
-                <div class="objective-num">2</div>
-                <div><strong>Occupancy Detection</strong><br><span class="text-muted">Develop a reliable occupancy detection subsystem that fuses PIR and RCWL microwave radar sensor data via ESP32 for high-accuracy human presence identification.</span></div>
-            </div>
-            <div class="objective-item">
-                <div class="objective-num">3</div>
-                <div><strong>Real-Time Data Pipeline</strong><br><span class="text-muted">Build a data pipeline that correlates occupancy status with per-appliance energy metrics and stores results in a structured database for analysis.</span></div>
-            </div>
-            <div class="objective-item">
-                <div class="objective-num">4</div>
-                <div><strong>AI-Driven Recommendations</strong><br><span class="text-muted">Create an intelligent recommendation engine that automatically alerts users or controls devices when energy waste is detected in unoccupied rooms.</span></div>
-            </div>
-            <div class="objective-item">
-                <div class="objective-num">5</div>
-                <div><strong>System Evaluation</strong><br><span class="text-muted">Evaluate system accuracy, energy savings achieved, and overall user experience through controlled real-world testing at SLIIT.</span></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Methodology -->
-    <section id="methodology" class="section-anchor mb-5">
-        <div class="card section-card p-4">
-            <div class="d-flex align-items-center gap-3 mb-3">
-                <div class="icon-circle bg-primary text-white"><i class="bi bi-gear-wide-connected"></i></div>
-                <h2 class="section-title mb-0">Methodology</h2>
-            </div>
-            <div class="row g-4 mt-1">
-                <div class="col-md-4">
-                    <div class="method-card">
-                        <div class="text-center mb-3">
-                            <i class="bi bi-cpu-fill text-success" style="font-size:2.5rem;"></i>
-                        </div>
-                        <h5>Energy Monitoring</h5>
-                        <p class="text-muted small">ACS712 current sensor reads real-time amperage per appliance. Data is processed by an <strong>ESP8266</strong> and pushed to the backend via HTTP API over Wi-Fi.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="method-card">
-                        <div class="text-center mb-3">
-                            <i class="bi bi-person-bounding-box text-success" style="font-size:2.5rem;"></i>
-                        </div>
-                        <h5>Occupancy Sensing</h5>
-                        <p class="text-muted small">A dual-sensor module combines <strong>PIR</strong> (motion) and <strong>RCWL microwave radar</strong> connected to an <strong>ESP32</strong> for reduced false negatives and improved accuracy in all lighting conditions.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="method-card">
-                        <div class="text-center mb-3">
-                            <i class="bi bi-box-seam-fill text-success" style="font-size:2.5rem;"></i>
-                        </div>
-                        <h5>Hardware Build</h5>
-                        <p class="text-muted small">Sensors are housed in custom-built <strong>"Step Boxes"</strong> powered by independent battery units for modularity. All firmware is written and calibrated using <strong>Arduino IDE</strong>.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="method-card">
-                        <div class="text-center mb-3">
-                            <i class="bi bi-server text-success" style="font-size:2.5rem;"></i>
-                        </div>
-                        <h5>Backend & Database</h5>
-                        <p class="text-muted small">A <strong>Python REST API</strong> receives sensor payloads, validates data, and writes to <strong>MongoDB</strong> — a NoSQL document database ideal for flexible, time-series IoT data. Business logic correlates occupancy events with per-appliance energy readings.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="method-card">
-                        <div class="text-center mb-3">
-                            <i class="bi bi-phone-fill text-success" style="font-size:2.5rem;"></i>
-                        </div>
-                        <h5>Flutter Mobile App</h5>
-                        <p class="text-muted small">A cross-platform <strong>Flutter</strong> mobile application (Android &amp; iOS) provides on-the-go monitoring — real-time energy usage, occupancy alerts, and device control, all communicating with the Python API.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="method-card">
-                        <div class="text-center mb-3">
-                            <i class="bi bi-robot text-success" style="font-size:2.5rem;"></i>
-                        </div>
-                        <h5>AI Recommendation</h5>
-                        <p class="text-muted small">When occupancy drops to zero but current draw remains, the system triggers an <strong>automated alert or relay command</strong>, guiding users or directly cutting power to wasteful appliances.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="method-card">
-                        <div class="text-center mb-3">
-                            <i class="bi bi-bar-chart-line-fill text-success" style="font-size:2.5rem;"></i>
-                        </div>
-                        <h5>Dashboard & Analytics</h5>
-                        <p class="text-muted small">A web-based management dashboard built with <strong>HTML5, CSS3, and Bootstrap</strong> visualises per-device consumption trends, occupancy history, and estimated savings.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Technologies Used -->
-    <section id="technologies" class="section-anchor mb-5">
-        <div class="card section-card p-4">
-            <div class="d-flex align-items-center gap-3 mb-3">
-                <div class="icon-circle bg-dark text-white"><i class="bi bi-stack"></i></div>
-                <h2 class="section-title mb-0">Technologies Used</h2>
-            </div>
-            <div class="row g-4 mt-1">
-                <div class="col-md-6">
-                    <h6 class="fw-bold text-uppercase text-muted mb-3"><i class="bi bi-tools me-2"></i>Hardware</h6>
-                    <div>
-                        <span class="tech-badge"><i class="bi bi-lightning-charge me-1"></i>ACS712 Current Sensor</span>
-                        <span class="tech-badge"><i class="bi bi-wifi me-1"></i>ESP8266</span>
-                        <span class="tech-badge"><i class="bi bi-cpu me-1"></i>ESP32</span>
-                        <span class="tech-badge"><i class="bi bi-eye me-1"></i>PIR Sensor</span>
-                        <span class="tech-badge"><i class="bi bi-broadcast me-1"></i>RCWL Microwave Radar</span>
-                        <span class="tech-badge"><i class="bi bi-battery-charging me-1"></i>Battery Units</span>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <h6 class="fw-bold text-uppercase text-muted mb-3"><i class="bi bi-code-slash me-2"></i>Software &amp; Frameworks</h6>
-                    <div>
-                        <span class="tech-badge"><i class="bi bi-filetype-py me-1"></i>Python</span>
-                        <span class="tech-badge"><i class="bi bi-database me-1"></i>REST API</span>
-                        <span class="tech-badge"><i class="bi bi-phone me-1"></i>Flutter</span>
-                        <span class="tech-badge"><i class="bi bi-leaf me-1"></i>MongoDB</span>
-                        <span class="tech-badge"><i class="bi bi-wrench me-1"></i>Arduino IDE</span>
-                        <span class="tech-badge"><i class="bi bi-arrow-left-right me-1"></i>Dart</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-</main>
-
-<footer>
-    <div class="container">
-        <div class="footer-brand">EnergySMART</div>
-        <p>&copy; 2026 Smart Energy Project Team &mdash; SLIIT &nbsp;|&nbsp; Faculty of Computing</p>
-        <div class="mt-3 d-flex justify-content-center gap-3">
-            <a href="index.html"><i class="bi bi-house me-1"></i>Home</a>
-            <a href="milestones.html"><i class="bi bi-flag me-1"></i>Milestones</a>
-            <a href="contact.html"><i class="bi bi-envelope me-1"></i>Contact</a>
-            <a href="https://github.com/Siri200211/Energy_Project_Web" target="_blank" rel="noopener noreferrer"><i class="bi bi-github me-1"></i>GitHub</a>
         </div>
     </div>
-</footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <main class="container my-5">
+
+        <!-- Quick Nav Pills -->
+        <div class="d-flex flex-wrap gap-2 mb-5 justify-content-center">
+            <a href="#literature" class="btn btn-outline-secondary btn-sm"><i class="bi bi-book me-1"></i>Literature
+                Survey</a>
+            <a href="#gap" class="btn btn-outline-secondary btn-sm"><i class="bi bi-search me-1"></i>Research Gap</a>
+            <a href="#problem" class="btn btn-outline-secondary btn-sm"><i
+                    class="bi bi-exclamation-circle me-1"></i>Research Problem</a>
+            <a href="#objectives" class="btn btn-outline-secondary btn-sm"><i
+                    class="bi bi-bullseye me-1"></i>Objectives</a>
+            <a href="#methodology" class="btn btn-outline-secondary btn-sm"><i
+                    class="bi bi-gear me-1"></i>Methodology</a>
+            <a href="#technologies" class="btn btn-outline-secondary btn-sm"><i
+                    class="bi bi-stack me-1"></i>Technologies</a>
+        </div>
+
+        <!-- Literature Survey -->
+        <section id="literature" class="section-anchor mb-5">
+            <div class="card section-card p-4">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                    <div class="icon-circle bg-success text-white"><i class="bi bi-book-half"></i></div>
+                    <h2 class="section-title mb-0">Literature Survey</h2>
+                </div>
+                <p>Current research highlights a growing need for effective energy handling in both residential and
+                    industrial sectors. Existing studies <em>(Khan et al., 2018)</em> focus predominantly on smart
+                    meters but often lack <strong>device-level granularity</strong> — they measure a building's total
+                    consumption but cannot pinpoint which specific appliance is wasting energy.</p>
+                <p>Recent advancements in low-cost IoT microcontrollers such as the <strong>ESP32</strong> and
+                    <strong>ESP8266</strong> have opened doors for real-time edge computing, enabling localized signal
+                    processing and calibration directly on the hardware <em>(Garcés, 2025)</em>. Parallel research in
+                    occupancy detection has demonstrated that combining <strong>Passive Infrared (PIR)</strong> sensors
+                    with <strong>RCWL microwave radar</strong> significantly reduces false-negative readings compared to
+                    either sensor used in isolation.
+                </p>
+                <p>Despite this progress, a fully integrated pipeline — from occupancy detection through to
+                    appliance-level energy actioning — remains largely absent from commercially available or
+                    research-grade systems.</p>
+            </div>
+        </section>
+
+        <!-- Research Gap -->
+        <section id="gap" class="section-anchor mb-5">
+            <div class="card section-card p-4">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                    <div class="icon-circle bg-info text-white"><i class="bi bi-search"></i></div>
+                    <h2 class="section-title mb-0">Research Gap</h2>
+                </div>
+                <div class="highlight-box">
+                    <p class="mb-2"><strong>Core Gap Identified:</strong></p>
+                    <p class="mb-0">Most existing systems provide aggregated building-level energy data but fail to
+                        identify <em>which specific appliance</em> is consuming energy in an <em>unoccupied room</em>.
+                        There is a clear absence of a system that tightly integrates:</p>
+                    <ul class="mt-2 mb-0">
+                        <li><strong>Real-time occupancy detection</strong> (multi-sensor fusion)</li>
+                        <li><strong>Device-level current monitoring</strong> (per-appliance metering)</li>
+                        <li><strong>Automated, AI-driven corrective actions</strong> (not just dashboards)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Problem -->
+        <section id="problem" class="section-anchor mb-5">
+            <div class="card section-card p-4">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                    <div class="icon-circle bg-danger text-white"><i class="bi bi-exclamation-circle"></i></div>
+                    <h2 class="section-title mb-0">Research Problem</h2>
+                </div>
+                <div class="problem-box">
+                    <p class="fs-5 fw-semibold text-danger mb-2">"How can IoT sensor fusion be used to automatically
+                        detect energy waste at the appliance level in unoccupied spaces and provide real-time corrective
+                        recommendations?"</p>
+                    <p class="mb-0 text-muted">Organizations lack a unified system that simultaneously monitors
+                        device-level energy consumption and detects room occupancy. Manual intervention is required to
+                        turn off appliances in vacant spaces, resulting in unnecessary energy waste, increased
+                        operational costs, and an enlarged carbon footprint.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Objectives -->
+        <section id="objectives" class="section-anchor mb-5">
+            <div class="card section-card p-4">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                    <div class="icon-circle bg-warning text-dark"><i class="bi bi-bullseye"></i></div>
+                    <h2 class="section-title mb-0">Research Objectives</h2>
+                </div>
+                <div class="objective-item">
+                    <div class="objective-num">1</div>
+                    <div><strong>Device-Level Monitoring</strong><br><span class="text-muted">Design and implement an
+                            energy monitoring module using the ACS712 current sensor interfaced with ESP8266 for
+                            wireless transmission via REST API.</span></div>
+                </div>
+                <div class="objective-item">
+                    <div class="objective-num">2</div>
+                    <div><strong>Occupancy Detection</strong><br><span class="text-muted">Develop a reliable occupancy
+                            detection subsystem that fuses PIR and RCWL microwave radar sensor data via ESP32 for
+                            high-accuracy human presence identification.</span></div>
+                </div>
+                <div class="objective-item">
+                    <div class="objective-num">3</div>
+                    <div><strong>Real-Time Data Pipeline</strong><br><span class="text-muted">Build a data pipeline that
+                            correlates occupancy status with per-appliance energy metrics and stores results in a
+                            structured database for analysis.</span></div>
+                </div>
+                <div class="objective-item">
+                    <div class="objective-num">4</div>
+                    <div><strong>AI-Driven Recommendations</strong><br><span class="text-muted">Create an intelligent
+                            recommendation engine that automatically alerts users or controls devices when energy waste
+                            is detected in unoccupied rooms.</span></div>
+                </div>
+                <div class="objective-item">
+                    <div class="objective-num">5</div>
+                    <div><strong>System Evaluation</strong><br><span class="text-muted">Evaluate system accuracy, energy
+                            savings achieved, and overall user experience through controlled real-world testing at
+                            SLIIT.</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Methodology -->
+        <section id="methodology" class="section-anchor mb-5">
+            <div class="card section-card p-4">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                    <div class="icon-circle bg-primary text-white"><i class="bi bi-gear-wide-connected"></i></div>
+                    <h2 class="section-title mb-0">Methodology</h2>
+                </div>
+                <div class="row g-4 mt-1">
+                    <div class="col-md-4">
+                        <div class="method-card">
+                            <div class="text-center mb-3">
+                                <i class="bi bi-cpu-fill text-success" style="font-size:2.5rem;"></i>
+                            </div>
+                            <h5>Energy Monitoring</h5>
+                            <p class="text-muted small">ACS712 current sensor reads real-time amperage per appliance.
+                                Data is processed by an <strong>ESP8266</strong> and pushed to the backend via HTTP API
+                                over Wi-Fi.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="method-card">
+                            <div class="text-center mb-3">
+                                <i class="bi bi-person-bounding-box text-success" style="font-size:2.5rem;"></i>
+                            </div>
+                            <h5>Occupancy Sensing</h5>
+                            <p class="text-muted small">A dual-sensor module combines <strong>PIR</strong> (motion) and
+                                <strong>RCWL microwave radar</strong> connected to an <strong>ESP32</strong> for reduced
+                                false negatives and improved accuracy in all lighting conditions.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="method-card">
+                            <div class="text-center mb-3">
+                                <i class="bi bi-box-seam-fill text-success" style="font-size:2.5rem;"></i>
+                            </div>
+                            <h5>Hardware Build</h5>
+                            <p class="text-muted small">Sensors are housed in custom-built <strong>"Step Boxes"</strong>
+                                powered by independent battery units for modularity. All firmware is written and
+                                calibrated using <strong>Arduino IDE</strong>.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="method-card">
+                            <div class="text-center mb-3">
+                                <i class="bi bi-server text-success" style="font-size:2.5rem;"></i>
+                            </div>
+                            <h5>Backend & Database</h5>
+                            <p class="text-muted small">A <strong>Python REST API</strong> receives sensor payloads,
+                                validates data, and writes to <strong>MongoDB</strong> — a NoSQL document database ideal
+                                for flexible, time-series IoT data. Business logic correlates occupancy events with
+                                per-appliance energy readings.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="method-card">
+                            <div class="text-center mb-3">
+                                <i class="bi bi-phone-fill text-success" style="font-size:2.5rem;"></i>
+                            </div>
+                            <h5>Flutter Mobile App</h5>
+                            <p class="text-muted small">A cross-platform <strong>Flutter</strong> mobile application
+                                (Android &amp; iOS) provides on-the-go monitoring — real-time energy usage, occupancy
+                                alerts, and device control, all communicating with the Python API.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="method-card">
+                            <div class="text-center mb-3">
+                                <i class="bi bi-robot text-success" style="font-size:2.5rem;"></i>
+                            </div>
+                            <h5>AI Recommendation</h5>
+                            <p class="text-muted small">When occupancy drops to zero but current draw remains, the
+                                system triggers an <strong>automated alert or relay command</strong>, guiding users or
+                                directly cutting power to wasteful appliances.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="method-card">
+                            <div class="text-center mb-3">
+                                <i class="bi bi-bar-chart-line-fill text-success" style="font-size:2.5rem;"></i>
+                            </div>
+                            <h5>Dashboard & Analytics</h5>
+                            <p class="text-muted small">A web-based management dashboard built with <strong>HTML5, CSS3,
+                                    and Bootstrap</strong> visualises per-device consumption trends, occupancy history,
+                                and estimated savings.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technologies Used -->
+        <section id="technologies" class="section-anchor mb-5">
+            <div class="card section-card p-4">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                    <div class="icon-circle bg-dark text-white"><i class="bi bi-stack"></i></div>
+                    <h2 class="section-title mb-0">Technologies Used</h2>
+                </div>
+                <div class="row g-4 mt-1">
+                    <div class="col-md-6">
+                        <h6 class="fw-bold text-uppercase text-muted mb-3"><i class="bi bi-tools me-2"></i>Hardware</h6>
+                        <div>
+                            <span class="tech-badge"><i class="bi bi-lightning-charge me-1"></i>ACS712 Current
+                                Sensor</span>
+                            <span class="tech-badge"><i class="bi bi-wifi me-1"></i>ESP8266</span>
+                            <span class="tech-badge"><i class="bi bi-cpu me-1"></i>ESP32</span>
+                            <span class="tech-badge"><i class="bi bi-eye me-1"></i>PIR Sensor</span>
+                            <span class="tech-badge"><i class="bi bi-broadcast me-1"></i>RCWL Microwave Radar</span>
+                            <span class="tech-badge"><i class="bi bi-battery-charging me-1"></i>Battery Units</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h6 class="fw-bold text-uppercase text-muted mb-3"><i class="bi bi-code-slash me-2"></i>Software
+                            &amp; Frameworks</h6>
+                        <div>
+                            <span class="tech-badge"><i class="bi bi-filetype-py me-1"></i>Python</span>
+                            <span class="tech-badge"><i class="bi bi-database me-1"></i>REST API</span>
+                            <span class="tech-badge"><i class="bi bi-phone me-1"></i>Flutter</span>
+                            <span class="tech-badge"><i class="bi bi-leaf me-1"></i>MongoDB</span>
+                            <span class="tech-badge"><i class="bi bi-wrench me-1"></i>Arduino IDE</span>
+                            <span class="tech-badge"><i class="bi bi-arrow-left-right me-1"></i>Dart</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-brand">EnergySMART</div>
+            <p>&copy; 2026 Smart Energy Project Team &mdash; SLIIT &nbsp;|&nbsp; Faculty of Computing</p>
+            <div class="mt-3 d-flex justify-content-center gap-3">
+                <a href="index.html"><i class="bi bi-house me-1"></i>Home</a>
+                <a href="milestones.html"><i class="bi bi-flag me-1"></i>Milestones</a>
+                <a href="contact.html"><i class="bi bi-envelope me-1"></i>Contact</a>
+                <a href="https://github.com/Siri200211/Energy_Project_Web" target="_blank" rel="noopener noreferrer"><i
+                        class="bi bi-github me-1"></i>GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
